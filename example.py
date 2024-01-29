@@ -74,8 +74,17 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        remote_server_uri= "https://dagshub.com/niloycste/Machine-Learning-Project-using-MLFlow.mlflow"
+        #for dagshub
+
+        # remote_server_uri= "https://dagshub.com/niloycste/Machine-Learning-Project-using-MLFlow.mlflow"
+        # mlflow.set_tracking_uri(remote_server_uri)
+
+        # for aws
+        remote_server_uri = "http://ec2-34-229-16-185.compute-1.amazonaws.com:5000/"
         mlflow.set_tracking_uri(remote_server_uri)
+
+
+
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
