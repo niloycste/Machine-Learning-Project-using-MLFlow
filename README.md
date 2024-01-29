@@ -12,6 +12,4 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/niloycste/Machine-Learning-Projec
 export MLFLOW_TRACKING_USERNAME=niloycste 
 export MLFLOW_TRACKING_PASSWORD=55343c50b515f85d83d1bbecdf5e45f6664231d3 
 
-
-
 ```
